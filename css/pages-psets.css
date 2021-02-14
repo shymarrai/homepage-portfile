@@ -1,0 +1,281 @@
+#pages-psets {
+  min-height: 100vh;
+  display: flex;
+}
+
+aside.animation-right {
+  width: 24rem;
+  min-height: 100vh;
+  background: linear-gradient(329.54deg, #15b6d6 0%, #15d6d6 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  padding: 2.4rem;
+}
+
+aside h2 {
+  margin-top: 6.4rem;
+  font: 800 4rem "Nunito", sans-serif;
+}
+
+aside p {
+  margin-top: 2.4rem;
+  font: 400 1.6rem/1.5 "Nunito", sans-serif;
+}
+
+aside footer p {
+  margin-top: 0.8rem;
+}
+
+main {
+  flex: 1;
+  width: 60vw;
+}
+
+/* ORPHANAGE DETAILS CONTENT*/
+
+.pset-details-content h1 {
+  color: #4d6f80;
+  font-size: 5rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  width: 50vw;
+}
+
+.pset-details-content {
+  line-height: 1.5;
+  color: #5c8599;
+  margin-top: 0;
+  font-size: 1.7rem;
+  padding: 8rem;
+  padding-top: 0;
+  width: 40vw;
+  font: 400 1.8rem/1 "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5vh;
+  padding-left: 5%;
+}
+
+div.pset-details-content h2 {
+  width: 50vw;
+  font-size: 2.7rem;
+  line-height: 1.5;
+  color: #4d6f80;
+}
+
+div.pset-details-content p {
+  width: 60vw;
+  font-size: 1.6rem;
+  margin-top: 5rem;
+}
+div.menu-hamburg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    320deg,
+    rgba(100, 188, 249, 1) 0%,
+    rgba(26, 71, 159, 1) 100%
+  );
+  overflow: hidden;
+}
+
+ul {
+  position: relative;
+  display: flex;
+
+  flex-direction: column;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  position: relative;
+  display: inline-block;
+  padding: 6px 15px;
+  text-decoration: none;
+  background: none;
+  color: white;
+  letter-spacing: 2px;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1;
+}
+ul:hover li a {
+  opacity: 1;
+}
+ul li a:hover {
+  text-decoration: none;
+  transform: scale(1.4);
+  z-index: 1000;
+  background: #15b6d6;
+  color: black;
+}
+ul li a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  transistion: 0s;
+}
+
+/* VERIFY BY JS FOR MENU CONTROLER*/
+
+.menu {
+  background: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 35px;
+  right: 25px;
+}
+
+.hamburguer {
+  position: relative;
+  display: block;
+  background: #000;
+  width: 30px;
+  height: 2px;
+  top: 29px;
+  left: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: #000;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -10px;
+}
+
+.hamburguer:after {
+  bottom: -10px;
+}
+
+input {
+  display: none;
+}
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+#box-menu {
+  display: none;
+  margin: 0;
+  overflow: hidden;
+}
+h1.animate-up {
+  animation-delay: 100ms;
+}
+
+h2.animate-up {
+  animation-delay: 200ms;
+}
+
+p.animate-up {
+  animation-delay: 300ms;
+}
+
+input.animate-up {
+  animation-delay: 100ms;
+}
+.code {
+  width: 600px;
+}
+@media (max-width: 750px) {
+  .pset-details-content h1 {
+    font-size: 3rem;
+    width: 70vw;
+  }
+  .pset-details-content h2 {
+    font-size: 2rem;
+    width: 40vw;
+  }
+  .pset-details-content p {
+    font-size: 1.5rem;
+    width: 10vw;
+  }
+
+  aside.animation-right {
+    paddin: 0;
+    width: 20%;
+    margin: 0;
+    left: 0;
+  }
+  aside.animation-right h1 {
+    display: none;
+  }
+  aside.animation-right h2 {
+    display: none;
+  }
+  aside.animation-right p {
+    display: none;
+  }
+  main {
+    padding: 0;
+    flex: 1;
+    width: 30vw;
+    margin: 0;
+  }
+
+  /* ORPHANAGE DETAILS CONTENT*/
+
+  div.pset-details-content {
+    margin: 0;
+    padding: 5px;
+    width: 70vw;
+  }
+  img {
+    width: 100%;
+  }
+  input {
+    margin: 0;
+  }
+  .menu {
+    top: 40px;
+    left: 1px;
+  }
+
+  footer {
+    font-size: 1.6rem;
+  }
+  footer p {
+    display: none;
+  }
+  footer strong {
+    display: none;
+  }
+
+  iframe {
+    width: 75vw;
+  }
+
+  .code {
+    width: 200px;
+    margin: 0;
+  }
+}

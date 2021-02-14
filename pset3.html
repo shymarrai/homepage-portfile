@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Bruno Gomes" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="My Homepage by CS50 Project. A instance by my creativity."
+    />
+    <link rel="icon" href="./images/logo-icon.png" />
+    <!--icon-->
+    <title>Pset3 | Shymarrai</title>
+    <!--TITULO -->
+    <link rel="stylesheet" href="./css/pages-psets.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS FONT NUNITO -->
+    <!-- LEAFLET CSS + JS LEAFLET-->
+  </head>
+  <body>
+    <div id="pages-psets">
+      <aside class="animation-right">
+        <header>
+          <h2>PSet - 3</h2>
+          <p>Introduction to computer science and programming logic with C.</p>
+        </header>
+        <footer>
+          <strong>Bruno Gomes</strong>
+          <p>My portfolio</p>
+        </footer>
+      </aside>
+
+      <!-- CONTENT -->
+
+      <main class="animate-appear width-sidebar">
+        <div class="menu-hamburg" id="box-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pset0.html">Pset - 0</a></li>
+            <li><a href="pset1.html">Pset - 1</a></li>
+            <li><a href="pset2.html">Pset - 2</a></li>
+            <li><a href="pset3.html">Pset - 3</a></li>
+          </ul>
+        </div>
+        <input id="menu-hamburguer" type="checkbox" onClick="status()" />
+        <label for="menu-hamburguer">
+          <div class="menu">
+            <span class="animate-up hamburguer"></span>
+          </div>
+        </label>
+        <div class="pset-details-content" id="content">
+          <h1 class="animate-up">Problem Set - 3</h1>
+          <h2 class="animate-up">Introtudction by logic programming with C.</h2>
+          <p class="animate-up">
+            This week the two projects delivered were of similar logic, one
+            dealing with a kind of simple election, the other with a more
+            complex election, with a second round and second options for
+            candidates.
+          </p>
+
+          <div class="animate-up alert alert-secondary" role="alert">
+            Below is an example:
+            <br />
+            <b>Plurality</b>
+          </div>
+          <img
+            src="./images/plurality-code.PNG"
+            alt="Plurality"
+            class="animate-up code"
+          />
+          <img
+            src="./images/plurality-code.1.PNG"
+            alt="Plurality"
+            class="animate-up code"
+          />
+          <img
+            src="./images/plurality-code.2.PNG"
+            alt="Plurality"
+            class="animate-up code"
+          />
+          <img
+            src="./images/plurality-code.3.PNG"
+            alt="Plurality"
+            class="animate-up code"
+          />
+          <img
+            src="./images/plurality-code.4.PNG"
+            alt="Plurality"
+            class="animate-up code"
+          />
+
+          <!-- Plurality -->
+          <p>1st stage {The program receives candidates by argument; }</p>
+          <img
+            src="./images/plurality-etapa-1.PNG"
+            alt="Plurality - Etapa 1"
+            class="animate-up"
+          />
+          <p>
+            NOTE: { If you do not send a valid argument, the program will react
+            as; }
+          </p>
+          <img
+            src="./images/plurality-erro.PNG"
+            alt="Plurality - ERRO"
+            class="animate-up"
+          />
+
+          <p>2nd step {The program asks for the number of voters; }</p>
+          <img
+            src="./images/plurality-etapa-2.PNG"
+            alt="Plurality - Etapa 2"
+            Sclass=" animate-up"
+          />
+
+          <p>4th the Winner is informed; }</p>
+          <img
+            src="./images/plurality-etapa-5.PNG"
+            alt="Plurality - Etapa 3"
+            Sclass=" animate-up"
+          />
+
+          <p>
+            NOTE.2: { If an equal number of votes is reported, the program
+            reports a tie showing the candidates; }
+          </p>
+          <img
+            src="./images/plurality-empate.PNG"
+            alt="Plurality - ERRO"
+            class="animate-up"
+          />
+
+          <p>
+            NOTE.3: { If a valid candidate is not informed, the program informs
+            the message; }
+          </p>
+          <img
+            src="./images/plurality-invalid.PNG"
+            alt="Plurality - ERRO"
+            class="animate-up"
+          />
+        </div>
+      </main>
+    </div>
+    <script src="./scripts/controler_menu.js"></script>
+  </body>
+</html>

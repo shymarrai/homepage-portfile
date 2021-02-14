@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="./images/logo-icon.png" />
+    <meta charset="UTF-8" />
+    <meta name="author" content="Bruno Gomes" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="My Homepage by CS50 Project. A instance by my creativity."
+    />
+
+    <!--icon-->
+    <title>Pset1 | Shymarrai</title>
+    <!--TITULO -->
+    <link rel="stylesheet" href="./css/pages-psets.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS FONT NUNITO -->
+
+    <!-- LEAFLET CSS + JS LEAFLET-->
+  </head>
+  <body>
+    <div id="pages-psets">
+      <aside class="animation-right">
+        <header>
+          <h2>PSet - 1</h2>
+          <p>Introduction to computer science and programming logic with C.</p>
+        </header>
+        <footer>
+          <strong>Bruno Gomes</strong>
+          <p>My portfolio</p>
+        </footer>
+      </aside>
+
+      <!-- CONTENT -->
+
+      <main class="animate-appear width-sidebar">
+        <div class="menu-hamburg" id="box-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pset0.html">Pset - 0</a></li>
+            <li><a href="pset1.html">Pset - 1</a></li>
+            <li><a href="pset2.html">Pset - 2</a></li>
+            <li><a href="pset3.html">Pset - 3</a></li>
+          </ul>
+        </div>
+        <input id="menu-hamburguer" type="checkbox" onClick="status()" />
+        <label for="menu-hamburguer">
+          <div class="menu">
+            <span class="animate-up hamburguer"></span>
+          </div>
+        </label>
+        <div class="pset-details-content" id="content">
+          <h1 class="animate-up">Problem Set - 1</h1>
+          <h2 class="animate-up">Introtudction by logic programming with C.</h2>
+          <p class="animate-up">
+            In this Problem Set I started my journey in C language, I ran my
+            first "Hello, World" program.
+          </p>
+          <hr />
+          <div class="animate-up alert alert-secondary" role="alert">
+            Below is an example:
+            <br />
+            <b>Hello, World</b>
+          </div>
+          <img
+            src="./images/pset1-helloworld.jpg"
+            alt="Hellor World"
+            class="animate-up code"
+          />
+          <!-- HELLO WORLD -->
+          <p>1st stage {The program asks your name; }</p>
+          <img
+            src="./images/pset1-helloworld.1.jpg"
+            alt="Hellor World - Etapa 1"
+            class="animate-up"
+          />
+          <p>2nd step {Receive your input and direct it to a variable; }</p>
+          <img
+            src="./images/pset1-helloworld.2.jpg"
+            alt="Hellor World - Etapa 2"
+            class="animate-up"
+          />
+          <p>3rd stage {Answer Hello, (Your input); }</p>
+          <img
+            src="./images/pset1-helloworld.3.jpg"
+            alt="Hellor World - Etapa 3"
+            class="animate-up"
+          />
+
+          <!-- CASH -->
+          <p class="animate-up">
+            Cash that consists of analyzing the informed change and informing
+            how many coins to return in exchange using the total minimum
+            possible between ¢ 25, ¢ 10, ¢ 05, ¢ 01.
+          </p>
+          <b
+            >NOTE:This code is not quite optimized because I ran out of time to
+            access the end of the course in time.</b
+          >
+          <hr />
+          <div class="animate-up alert alert-secondary" role="alert">
+            Below is an example:
+            <br />
+            <b>Cash</b>
+          </div>
+          <img
+            src="./images/pset1-cash.jpg"
+            alt="Cash"
+            class="animate-up code"
+          />
+          <img
+            src="./images/pset1-cash-1.jpg"
+            alt="Cash Part.2"
+            class="animate-up code"
+          />
+          <p>1st stage {The program asks the owed; }</p>
+          <img
+            src="./images/cash-1.jpg"
+            alt="Cash - Etapa 1"
+            class="animate-up"
+          />
+          <p>
+            2nd step {The algorthim disseminates the amount due among the
+            available amounts and informs the total number of coins required.; }
+          </p>
+          <img
+            src="./images/cash-2.jpg"
+            alt="Cash - Etapa 2"
+            class="animate-up"
+          />
+
+          <!-- MARIO -->
+          <p class="animate-up">
+            Mario it consists of executing a program that reads a height and
+            builds in Hashs (#) the last pyramid wall similar to the Mario Bross
+            Game.
+          </p>
+          <b
+            >NOTE: The height limit is 8 and the program ends after executing
+            its function.</b
+          >
+          <hr />
+          <div class="animate-up alert alert-secondary" role="alert">
+            Below is an example of the project sent -> :
+            <br />
+            <b>Mario</b>
+          </div>
+          <img
+            src="./images/pset1-mario.jpg"
+            alt="Mario"
+            class="animate-up code"
+          />
+          <p>1st stage {The program asks for the height; }</p>
+          <img
+            src="./images/pset1-mario.1.jpg"
+            alt="Cash - Etapa 1"
+            class="animate-up"
+          />
+          <p>
+            2nd step {The program handles the input and constructs the wall with
+            Hash's (#) at the height inserted through loops..; }
+          </p>
+          <img
+            src="./images/pset1-mario.2.jpg"
+            alt="Cash - Etapa 2"
+            class="animate-up"
+          />
+        </div>
+      </main>
+    </div>
+    <script src="./scripts/controler_menu.js"></script>
+  </body>
+</html>

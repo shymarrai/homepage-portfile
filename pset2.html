@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Bruno Gomes" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="My Homepage by CS50 Project. A instance by my creativity."
+    />
+    <link rel="icon" href="./images/logo-icon.png" />
+    <!--icon-->
+    <title>Pset2 | Shymarrai</title>
+    <!--TITULO -->
+    <link rel="stylesheet" href="./css/pages-psets.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS FONT NUNITO -->
+
+    <!-- LEAFLET CSS + JS LEAFLET-->
+  </head>
+  <body>
+    <div id="pages-psets">
+      <aside class="animation-right">
+        <header>
+          <h2>PSet - 2</h2>
+          <p>Introduction to computer science and programming logic with C.</p>
+        </header>
+        <footer>
+          <strong>Bruno Gomes</strong>
+          <p>My portfolio</p>
+        </footer>
+      </aside>
+
+      <!-- CONTENT -->
+
+      <main class="animate-appear width-sidebar">
+        <div class="menu-hamburg" id="box-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pset0.html">Pset - 0</a></li>
+            <li><a href="pset1.html">Pset - 1</a></li>
+            <li><a href="pset2.html">Pset - 2</a></li>
+            <li><a href="pset3.html">Pset - 3</a></li>
+          </ul>
+        </div>
+        <input id="menu-hamburguer" type="checkbox" onClick="status()" />
+        <label for="menu-hamburguer">
+          <div class="menu">
+            <span class="animate-up hamburguer"></span>
+          </div>
+        </label>
+        <div class="pset-details-content" id="content">
+          <h1 class="animate-up">Problem Set - 2</h1>
+          <h2 class="animate-up"></h2>
+          <p class="animate-up">
+            That week I learned to program by receiving an argument entry at
+            program startup and word processing.
+          </p>
+          <hr />
+          <div class="animate-up alert alert-secondary" role="alert">
+            Below is an example:
+            <br />
+            <b>Caesar</b>
+          </div>
+          <img
+            src="./images/pset2-caesar.jpg"
+            alt="Caesar"
+            class="animate-up code"
+          />
+          <img
+            src="./images/pset2-caesar.1.jpg"
+            alt="Caesar - Etapa 1"
+            class="animate-up code"
+          />
+          <!-- CAESAR -->
+          <p>
+            1st stage {When calling this program, it is necessary to insert an
+            argument, which will be the encryption key, the distance from the
+            original letter of the encrypted one; }
+          </p>
+          <img
+            src="./images/pset2-caesar-1.jpg"
+            alt="Caesar - Etapa 1"
+            class="animate-up"
+          />
+          <p>
+            NOTE: { If you do not send a valid argument, the program will react
+            as; }
+          </p>
+          <img
+            src="./images/pset2-caesar-erro.jpg"
+            alt="Caesar - Etapa 1"
+            class="animate-up"
+          />
+
+          <p>
+            2nd step {With an acceptable input of argument the program asks you
+            for a text. In response the program deals with the algorithm using
+            the Caesar cipher;; }
+          </p>
+          <img
+            src="./images/pset2-caesar-2.jpg"
+            alt="Caesar - Etapa 2"
+            class="animate-up"
+          />
+
+          <!-- READABILITY -->
+          <p class="animate-up">
+            In Readability, the program analyzes a text and informs the
+            schooling necessary to understand it.
+          </p>
+          <b
+            >NOTE:Outputs are Grade before 1, Grade 1, Grade 2, Grade 3 ...,
+            Grade 15, Grade 16+</b
+          >
+          <hr />
+          <div class="animate-up alert alert-secondary" role="alert">
+            Below is an example:
+            <br />
+            <b>Readability</b>
+          </div>
+          <img
+            src="./images/readability-pset2.jpg"
+            alt="Readability"
+            class="animate-up code"
+          />
+          <img
+            src="./images/readability-pset-2.jpg"
+            alt="Readability Part.2"
+            class="animate-up code"
+          />
+          <p>1st stage {The program request the text; }</p>
+          <img
+            src="./images/pset2-readability.jpg"
+            alt="Readability - Etapa 1"
+            class="animate-up"
+          />
+          <p>
+            2nd step {The inserted text is treated and analyzed according to the
+            number of sentences, words and letters, the result is applied on a
+            formula and then the algorithm informs what grade it fits into; }
+          </p>
+          <img
+            src="./images/pset2-readability.1.jpg"
+            alt="Readability - Etapa 2"
+            class="animate-up code"
+          />
+        </div>
+      </main>
+    </div>
+    <script src="./scripts/controler_menu.js"></script>
+  </body>
+</html>
